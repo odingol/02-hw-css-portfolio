@@ -1,0 +1,693 @@
+
+* {
+  margin:0%;
+  padding:0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --headerfooter: rgb(36, 18, 18);
+  --bodybackground: rgba(179, 139, 107, 0.938);
+  --hover:rgb(250, 250, 158);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5%;
+  opacity:95%;
+}
+
+h1 {
+  flex-shrink:4;
+}
+
+.wrapnav {
+  display:flex;
+  flex-wrap:wrap;
+  position:relative;
+}
+
+
+body {
+  background: var(--bodybackground);
+}
+
+p {
+  font-family: 'Open Sans' , sans-serif;
+}
+
+h2 {
+  font-size: 200%; 
+}
+
+/* Style each section header and styles them */
+
+#about-me {
+  margin-top: 8%;
+}
+
+.section-header {
+ display:flex;
+ flex-direction: row;
+ width:100%;
+ border: 5px solid black;
+ border-bottom: 4px solid rgb(197, 211, 115);
+ background-color: rgb(5, 26, 65);
+ color: rgb(247, 235, 235);
+ font-family: 'Open Sans' , sans-serif;
+ margin-top:4%;
+}
+
+.style-header {
+  background-color: var(--headerfooter);
+  color:white;
+  width:100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 4%;
+  position:fixed;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  z-index: 3; /*This is what makes the head section w/ links cover another positioned element. A larger z-index covers more than a smaller one */
+}
+
+/* Footer Section */
+
+.style-footer {
+  background-color: var(--headerfooter);
+  color:white;
+  width:100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+  color:white;
+}
+
+
+.style-title {
+  font-size: 230%;
+  -webkit-text-stroke: 2px #856a3a;
+  text-shadow: 0px 4px 6px rgb(155, 105, 47);
+  font-style: italic;
+  display:flex;
+  flex-wrap:wrap;
+  position:relative;
+}
+
+nav {
+  display:flex;
+  flex-wrap:wrap;
+  position:relative;
+  padding: 1%;
+  font-size: 120%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 400px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /*Deletes the underlines on the nav links*/
+}
+
+/* welcome background image and text */
+
+.welcome-background {
+  display: flex;
+  justify-content: center;
+  padding: 20% 15% 10% 10%;
+  background-image: url('../Images/Portfolio-Background-Image.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
+
+.size-welcome {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 80%;
+  margin-bottom: 6%;
+  border: 1px solid white;
+  font-size: 180%;
+  width:30%;
+  height:40%;
+  border-radius: 5px;
+  background-color: rgb(219, 213, 213);
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 6px black;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Me section */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:6%;
+  padding: 5%;
+  background-color: rgba(236, 216, 177, 0.432);
+}
+
+.style-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  height:25%;
+  margin-left: 10%;
+  margin-top: 5%;
+  border: 8px solid white;
+  padding: 3%;
+  background-color:rgba(211, 224, 228, 0.952);
+  color:black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 120px;
+  position:relative;
+}
+
+.style-about-me {
+  margin-bottom: 5%;
+  font-size: 200%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: row;
+  line-height: 2%;
+  padding: 2%;
+}
+
+.format-content {
+  line-height: 180%;
+  text-align: center;
+}
+
+/* Adjusts my profile image width and height on page */
+
+.style-image {
+  width:30%;
+  height:5%;
+  border: 4px solid black;
+  box-shadow: 5px 7px black;
+  border-radius: 5px;
+  position:relative;
+}
+
+/* My Work Section */
+
+.work {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 6%;
+  padding:5%;
+  background-color: rgba(81, 80, 82, 0.596);
+}
+
+.priority-card-column {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:90%;
+  margin-top:5%;
+  margin-bottom:-5%;
+}
+
+.priority-style-project {
+  border: 3px solid rgba(226, 108, 108, 0.521);
+  width: 70%;
+  height:65%;
+  background-color: var(--headerfooter);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-image-priority {
+  width: 97%;
+  height:92%;
+  margin-left: 4%;
+  margin-right:5%;
+  position:relative;
+  top:4%;
+  right:2.5%;
+  border: 2px solid black;
+}
+
+.style-project-caption-priority {
+  margin:5%;
+  border: 1px solid black;
+  width:50%;
+  height:15pt;
+  font-size:90%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-items:center;
+}
+
+.style-project-caption-priority h3 {
+  position:relative;
+  top:5px;
+}
+
+.card-column {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:50%;
+  height:100%;
+  margin-bottom: 5%;
+}
+
+.style-project {
+  border: 3px solid rgba(226, 108, 108, 0.521);
+  width:50%; 
+  height:100%;
+  background-color: var(--headerfooter);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-image {
+  margin: 2% 2% 2% 2%;
+  width:96%;
+  border: 2px solid black;
+}
+
+.style-project-caption {
+  margin-bottom:5%;
+  border: 1px solid black;
+  width:75%;
+  height:15pt;
+  font-size:90%;
+  text-align: center;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  align-items:center;
+}
+
+.style-project-caption h3 {
+  position:relative;
+  top:1%;
+}
+
+.style-project a {
+  text-decoration: none;
+}
+
+h3 {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+/* Contact Me Section */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:100%;
+  background-color: rgba(27, 27, 58, 0.637);
+  padding:50px;
+}
+
+.style-contact {
+  border:5px solid black;
+  width:50%;
+  height:20%;
+  padding-top:2%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(7, 66, 100, 0.603), rgba(114, 88, 175, 0.603), rgba(183, 213, 238, 0.603));
+  border-radius: 20px;
+  color:white;
+  font-size: 120%;
+  text-align: center;
+}
+
+
+.style-button {
+  padding:2%;
+  background-color: grey;
+  color:white;
+  box-shadow: 3px 3px 5px 2px black;
+  margin-bottom: 5%;
+}
+
+input {
+  width: 75%;
+  height:25px;
+  margin-top:3px;
+  margin-bottom:3px;
+  margin-left: 5px;
+  border:1px solid black;
+}
+
+form {
+  width:50%;
+}
+
+.style-contact .center-submit {
+  text-align: center;
+}
+
+.center-submit {
+  width: 100%;
+  height:60%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* Hover styling */
+nav a:hover {
+  color:var(--hover);
+  font-size: 110%;
+  transition: all 0.2s ease-out;
+}
+
+
+.style-project:hover,
+.priority-style-project:hover {
+  box-shadow: inset 0px 0px 20px rgb(226, 108, 108), 5px 5px 40px rgb(226, 108, 108);
+}
+
+footer a:hover {
+  color:var(--hover);
+}
+
+.style-button:hover {
+  color:var(--hover);
+}
+
+.card-column .style-project:hover { /*increases the height and width of card upon hover */
+  height:60%;
+  width:60%;
+}
+
+/* Media Queries */
+
+@media screen and  (max-width:1250px) {
+
+  .card-column {
+    flex: 0 0 45%;
+  }
+
+  .style-title {
+      width:60%;
+      padding:2%;
+      font-size:200%;
+    }
+
+  .wrapnav {
+    width:100%;
+  }
+
+  form {
+    width:100%;
+  }
+
+  input {
+    width:50%;
+    height:50%;
+  }
+}
+  
+
+@media screen and (max-width:1300px) {
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .style-image {
+    width:50%;
+    flex-grow:20%;
+    margin-bottom:6%;
+  }
+
+  .style-about {
+    width:100%;
+    height:50%;
+  }
+
+  .style-about-me {
+    font-size: 150%;
+    flex-grow: 6%;
+    margin-bottom: 0%;
+  }
+
+  .format-content {
+    font-size: 95%;
+    flex: 0 2 45%;
+    padding:4%;
+  }
+
+  .style-image .style-about {
+    flex:0 0 45%;
+    width:80%;
+  }
+
+  .style-image {
+    margin-left: 8%;
+    right:3%;
+  }
+
+  .style-about {
+    right:5%;
+    width:100%;
+  }
+
+  .style-title {
+    width:50%;
+  }
+
+  .wrapnav {
+    width:100%;
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  .style-title {
+    width:50%;
+    padding:2%;
+    font-size:200%;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5%;
+  }
+
+  nav ul {
+    width:50%;
+  }
+
+  .card-column {
+    width:100%;
+  }
+
+  .size-welcome {
+    font-size: 150%;
+  }
+
+  .wrapnav {
+    font-size: 90%;
+    width:100%;
+  }
+
+}
+
+@media all and (max-width:605px) {
+  header {
+    padding:4%;
+  }
+
+  .welcome-background {
+    padding:25% 20% 15% 15%;
+  }
+
+  .style-project-caption {
+    height:10pt;
+  }
+
+  .style-project-caption-priority {
+    height:15pt;
+  }
+  
+  .size-welcome {
+    font-size: 120%;
+  }
+
+  .wrapnav {
+    width:100%;
+  }
+
+  .style-contact {
+    width:50%;
+    height:100%;
+    font-size: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width:100%;
+  }
+
+  input {
+    width:50%;
+    height:50%;
+  }
+}
+
+@media all and (max-width:455px) {
+  .style-title {
+    font-size:180%;
+    flex-direction: column;
+    justify-content:center;
+    width:100%;  
+  }
+  
+  .size-welcome {
+    font-size: 60%;
+  }
+
+  .format-content {
+    padding:8%;
+  }
+
+  nav {
+    font-size:10%;
+    justify-content: center;
+    width: 25%;
+  }
+
+  .style-about {
+    width:100%;
+  }
+
+  .style-header {
+    font-size:60%;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .style-contact {
+    width:100%;
+    height:100%;
+    font-size: 80%;
+    flex-direction: column;
+  }
+
+  form {
+    width:100%;
+  }
+
+  input {
+    width:50%;
+    height:50%;
+  }
+
+}
+
+@media all and (max-width:860px) {
+  .style-title {
+    margin-bottom: 3%;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    font-size: 220%;
+  }
+
+  header {
+    padding:4%;
+  }
+
+  nav {
+    font-size: 90%;
+    justify-content: center space-evenly;
+    width: 100%;
+  }
+
+  .style-header {
+    width:100%;
+    }
+
+  .work {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .priority-card-column {
+    width:90%;
+    height:90%;
+    margin-bottom: 10%;
+
+  }
+
+  .card-column {
+    width:80%;
+    height:80%;
+  }
+
+  .style-contact {
+    width:75%;
+  }
+
+  form {
+    width:75%;
+  }
+
+  .style-contact {
+    width:50%;
+    height:100%;
+    font-size: 80%;
+  }
+
+  form {
+    width:50%;
+  }
+
+  input {
+    width:100%;
+    height:70%;
+  }
+}
+
+
+
+

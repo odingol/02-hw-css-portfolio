@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        min-height: 100%;
+        line-height: 1;
+        font-family: sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 100%;
+    }
+    
+    input,
+    select,
+    option,
+    optgroup,
+    textarea,
+    button {
+        font-size: 100%;
+        font-family: sans-serif;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    @media all and (max-width:850px) {
+        .style-title {
+          margin-bottom: 3%;
+          width: 50%;
+          justify-content: center;
+        }
+    
+        header {
+          padding:4%;
+        }
+      }
