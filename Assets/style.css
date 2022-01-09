@@ -42,22 +42,21 @@ h2 {
   font-size: 200%; 
 }
 
-/* Style each section header and styles them */
+/* Each section header style and format them */
 
 #about-me {
-  margin-top: 8%;
+  margin-top: 0%;
 }
 
 .section-header {
  display:flex;
+ flex-grow: 4;
  flex-direction: row;
  width:100%;
- border: 5px solid black;
- border-bottom: 4px solid rgb(197, 211, 115);
+ border: 2px solid black;
  background-color: rgb(5, 26, 65);
- color: rgb(247, 235, 235);
- font-family: 'Open Sans' , sans-serif;
- margin-top:4%;
+ color: rgba(247, 231, 207, 0.801);
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .style-header {
@@ -122,36 +121,45 @@ nav a {
   text-decoration: none; /*Deletes the underlines on the nav links*/
 }
 
-/* welcome background image and text */
+/* Welcome background image and text */
 
 .welcome-background {
   display: flex;
   justify-content: center;
-  padding: 20% 15% 10% 10%;
+  padding: 20% 15% 15% 14%;
   background-image: url('../Images/Portfolio-Background-Image.jpg');
   background-size: cover;
   background-repeat: none;
+  position: relative;
 }
 
 .size-welcome {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
   font-weight: bold;
-  opacity: 80%;
+  opacity: 75%;
   margin-bottom: 6%;
   border: 1px solid white;
-  font-size: 180%;
+  font-size: 100%;
   width:30%;
-  height:40%;
+  height:30%;
   border-radius: 5px;
   background-color: rgb(219, 213, 213);
   border-radius: 10px;
   box-shadow: 0px 4px 5px 6px black;
   display:flex;
   flex-wrap:wrap;
+  flex-shrink:3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position:relative;
+  right:4%;
+}
+
+.size-welcome h2 {
+  display:flex;
+  flex-wrap:wrap;
 }
 
 /* About Me section */
@@ -251,6 +259,7 @@ nav a {
 
 .style-project-caption-priority {
   margin:5%;
+  margin-top: 3%;
   border: 1px solid black;
   width:50%;
   height:15pt;
@@ -259,9 +268,12 @@ nav a {
   text-align: center;
   color: white;
   display:flex;
+  flex-shrink: 4;
   flex-wrap:wrap;
   flex-direction:column;
   align-items:center;
+  box-shadow: 0px 3px 15px black;
+  border-radius: 10px;
 }
 
 .style-project-caption-priority h3 {
@@ -276,6 +288,8 @@ nav a {
   width:50%;
   height:100%;
   margin-bottom: 5%;
+  border: 2px solid rgba(243, 240, 247, 0.048);
+  box-shadow: inset 0px 0px 60px rgba(243, 240, 247, 0.048);
 }
 
 .style-project {
@@ -295,7 +309,7 @@ nav a {
 .style-project-caption {
   margin-bottom:5%;
   border: 1px solid black;
-  width:75%;
+  width:45%;
   height:15pt;
   font-size:90%;
   text-align: center;
@@ -303,9 +317,12 @@ nav a {
   background-color: black;
   color: white;
   display:flex;
+  flex-shrink: 4;
   flex-wrap:wrap;
   flex-direction:column;
   align-items:center;
+  box-shadow: 0px 3px 15px black;
+  border-radius: 10px;
 }
 
 .style-project-caption h3 {
@@ -320,21 +337,25 @@ nav a {
 h3 {
   display:flex;
   flex-wrap:wrap;
+  font-style:italic;
 }
 
 
 /* Contact Me Section */
+
 .contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width:100%;
-  background-color: rgba(27, 27, 58, 0.637);
-  padding:50px;
+  background-color: rgba(7, 32, 46, 0.425);
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .style-contact {
   border:5px solid black;
+  box-shadow: 0px 2px 15px black;
   width:50%;
   height:20%;
   padding-top:2%;
@@ -342,7 +363,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, rgba(7, 66, 100, 0.603), rgba(114, 88, 175, 0.603), rgba(183, 213, 238, 0.603));
+  background: linear-gradient(45deg, rgba(7, 66, 100, 0.479), rgba(114, 88, 175, 0.363), rgba(183, 213, 238, 0.253));
   border-radius: 20px;
   color:white;
   font-size: 120%;
@@ -386,6 +407,7 @@ form {
 
 
 /* Hover styling */
+
 nav a:hover {
   color:var(--hover);
   font-size: 110%;
@@ -410,6 +432,7 @@ footer a:hover {
   height:60%;
   width:60%;
 }
+
 
 /* Media Queries */
 
@@ -517,7 +540,7 @@ footer a:hover {
   }
 
   .size-welcome {
-    font-size: 150%;
+    font-size: 70%;
   }
 
   .wrapnav {
@@ -532,10 +555,6 @@ footer a:hover {
     padding:4%;
   }
 
-  .welcome-background {
-    padding:25% 20% 15% 15%;
-  }
-
   .style-project-caption {
     height:10pt;
   }
@@ -545,7 +564,7 @@ footer a:hover {
   }
   
   .size-welcome {
-    font-size: 120%;
+    font-size: 60%;
   }
 
   .wrapnav {
@@ -579,7 +598,7 @@ footer a:hover {
   }
   
   .size-welcome {
-    font-size: 60%;
+    font-size: 30%;
   }
 
   .format-content {
@@ -599,6 +618,10 @@ footer a:hover {
   .style-header {
     font-size:60%;
     align-items: center;
+  }
+
+  .section-header h2 {
+    font-size:150%;
   }
 
   h3 {
@@ -629,7 +652,7 @@ footer a:hover {
     width: 100%;
     justify-content:center;
     align-items: center;
-    font-size: 220%;
+    font-size: 180%;
   }
 
   header {
@@ -637,13 +660,18 @@ footer a:hover {
   }
 
   nav {
-    font-size: 90%;
+    font-size: 80%;
     justify-content: center space-evenly;
     width: 100%;
   }
 
   .style-header {
     width:100%;
+    padding: 1%;
+    }
+
+  .section-header {
+      font-size: 70%;
     }
 
   .work {
