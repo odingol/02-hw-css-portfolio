@@ -51,7 +51,7 @@ Following the header lies the background-image which introduces the user to the 
 
 When the user scrolls down or uses the nav link they are introduced to this section, my "About Me"! Above this is my section header titled "About Me". I have listed 2 other section headers corresponding to the title of the nav links above. In this specific section the user gets to see my professional business photo taken in the city of Seattle and to the right of the photo exists a small section giving a somewhat formal introduction to the web page and a brief share of my hobbies.<br><br>
 
-![my work section](./Screenshots/my-work.Png)
+![my work section](./Screenshots/my-work.png)
 
 ***My Work***
 
