@@ -594,7 +594,9 @@ footer a:hover {
     font-size:180%;
     flex-direction: column;
     justify-content:center;
-    width:100%;  
+    width:100%;
+    -webkit-text-stroke: 1px #856a3a;
+  text-shadow: 0px 2px 3px rgb(155, 105, 47);  
   }
   
   .size-welcome {
