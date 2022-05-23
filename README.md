@@ -1,4 +1,4 @@
-# 02 Advanced CSS: Portfolio
+# css-portfolio
 
 ## My Task
 
