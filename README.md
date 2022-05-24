@@ -69,6 +69,6 @@ Last but no least is the "Contact Me" & Footer section. For now, the contact me 
 <br>
 
 ## External Links
-[Deployed Application](https://odingol.github.io/02-hw-css-portfolio/)
+[Deployed Application](https://spectacular-kitten-d24b10.netlify.app/)
 
 [GitHub Repository](https://github.com/odingol/02-hw-css-portfolio.git)
